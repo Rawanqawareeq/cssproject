@@ -240,7 +240,29 @@ header .auth .register, header .auth .login:hover{
 .courses .row {
     gap: 40px;
 }
+.testimonial{
+  width:calc(100% - 30px) !important;
+}
+.testimonials .row{
+    flex-direction: column;
+    gap: 20px;
+    
+}
+footer .footer_item{
+    width: calc((100% - 50px)/2) !important;
+    align-items: center;
+    font-size: x-large;
+}
+footer .left_side , footer .right_side{
+    width: calc(100%) !important;
+}
+footer .right_side{
+    gap: 50px !important;
 
+}
+footer .footer_item nav{
+    align-items: center;
+}
 
 }
 @media (max-width: 480px) {
@@ -280,23 +302,146 @@ header .auth .register, header .auth .login:hover{
     .course_description p:nth-child(3) {
         font-size: 14px;
     }
+    footer .footer_item{
+        width: 100% !important;
+    }
 }
 
-.testimonials{
-    padding: 40px 0;
+.testimonials .row{
+    gap: 40px;
 }
-footer {
-    background-color: rgba(0, 0, 0, 0.719);
-    color: white;
+.testimonials{
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.ratting{
+    padding: 10px;
+}
+.testimonial{
+    width: calc((100% - 50px)/2);
     padding: 20px;
-    text-transform: capitalize;
+    box-shadow: 0px 8.24px 8.24px 0px rgba(0, 0, 0, 0.1);
+position: relative;
+}
+.testimonials h2{
+    text-align: center;
+    padding: 20px 0;
+ 
+}
+.testimonial::after{
+    content: '';
+    width:0;
+    height:0;
+    border-top:  50px solid #F4F4F4;
+    border-left: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.user-info{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.user-info h3{
+    font-size: 14px;
+}
+.user-info span{
+    font-size: 10px;
+    color: #969696;
+}
+
+.user-info img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user-data{
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+.ratting{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+footer {
+    font-family: 'Poppins';
+    background-color:#393E46;
+    color: white;
+    padding: 50px 0px;
+    text-transform: capitalize;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: sticky;
     bottom: 0;
     width: 100%;
-    opacity: 1;
     z-index: 100;
+    
+}
+footer nav a{
+    color: #F4F4F4;
+} 
+
+footer h3{
+    font-size: 20px;
+}
+footer .row{
+    gap: 40px;
+}
+footer .left_side , footer .right_side{
+    width: calc((100% - 40px)/2);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+footer p {
+   
+    text-transform: none;
+
+}
+footer .icon svg{
+ 
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    padding: 10px;
+    box-sizing: content-box;
+
+
+}
+footer .icon {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+footer .right_side{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+footer .footer_item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: calc((100% - 60px)/4);
+}
+footer .footer_item nav{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
 }
